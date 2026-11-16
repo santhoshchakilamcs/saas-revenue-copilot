@@ -1,0 +1,769 @@
+{
+  "summary": {
+    "backend": "offline",
+    "tool_schema": null,
+    "grounding": null,
+    "model": null,
+    "n_questions": 45,
+    "accuracy": 1.0,
+    "metric_accuracy": 1.0,
+    "refusal_accuracy": 1.0,
+    "flagged_rate": 0.0,
+    "accuracy_unflagged": 1.0,
+    "wrong_and_unflagged": 0,
+    "mean_latency_s": 0.0017777777777777787
+  },
+  "records": [
+    {
+      "id": "q01",
+      "question": "What was total ARR at the end of 2025?",
+      "answer": "arr for all segments, 2025-12: $110,147,820.00.",
+      "value": 110147820.0,
+      "reference": 110147820.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "arr",
+        "month": "2025-12"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.015,
+      "correct": true
+    },
+    {
+      "id": "q02",
+      "question": "What was our annual recurring revenue in June 2025?",
+      "answer": "arr for all segments, 2025-06: $85,820,100.00.",
+      "value": 85820100.0,
+      "reference": 85820100.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "arr",
+        "month": "2025-06"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.001,
+      "correct": true
+    },
+    {
+      "id": "q03",
+      "question": "ARR for the Enterprise segment at 2025-09?",
+      "answer": "arr for Enterprise, 2025-09: $76,647,180.00.",
+      "value": 76647180.0,
+      "reference": 76647180.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "arr",
+        "segment": "Enterprise",
+        "month": "2025-09"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.001,
+      "correct": true
+    },
+    {
+      "id": "q04",
+      "question": "What was Mid-Market ARR at the end of Q1 2025?",
+      "answer": "arr for Mid-Market, 2025-03: $14,216,640.00.",
+      "value": 14216640.0,
+      "reference": 14216640.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "arr",
+        "segment": "Mid-Market",
+        "month": "2025-03"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.001,
+      "correct": true
+    },
+    {
+      "id": "q05",
+      "question": "What was SMB annual recurring revenue in December 2024?",
+      "answer": "arr for SMB, 2024-12: $2,152,080.00.",
+      "value": 2152080.0,
+      "reference": 2152080.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "arr",
+        "segment": "SMB",
+        "month": "2024-12"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.001,
+      "correct": true
+    },
+    {
+      "id": "q06",
+      "question": "What was MRR in 2024-07?",
+      "answer": "mrr for all segments, 2024-07: $4,450,025.00.",
+      "value": 4450025.0,
+      "reference": 4450025.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "mrr",
+        "month": "2024-07"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.001,
+      "correct": true
+    },
+    {
+      "id": "q07",
+      "question": "Monthly recurring revenue for Enterprise in Nov 2025?",
+      "answer": "mrr for Enterprise, 2025-11: $7,132,915.00.",
+      "value": 7132915.0,
+      "reference": 7132915.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "mrr",
+        "segment": "Enterprise",
+        "month": "2025-11"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.001,
+      "correct": true
+    },
+    {
+      "id": "q08",
+      "question": "What was our ARR run-rate at the end of Q3 2024?",
+      "answer": "arr for all segments, 2024-09: $56,931,600.00.",
+      "value": 56931600.0,
+      "reference": 56931600.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "arr",
+        "month": "2024-09"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.001,
+      "correct": true
+    },
+    {
+      "id": "q09",
+      "question": "How many active customers did we have in 2025-12?",
+      "answer": "active_customers for all segments, 2025-12: 925.",
+      "value": 925.0,
+      "reference": 925.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "active_customers",
+        "month": "2025-12"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.001,
+      "correct": true
+    },
+    {
+      "id": "q10",
+      "question": "How many paying customers were in the SMB segment in March 2025?",
+      "answer": "active_customers for SMB, 2025-03: 431.",
+      "value": 431.0,
+      "reference": 431.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "active_customers",
+        "segment": "SMB",
+        "month": "2025-03"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.001,
+      "correct": true
+    },
+    {
+      "id": "q11",
+      "question": "How many new customers did we sign in 2025-04?",
+      "answer": "new_customers for all segments, 2025-04: 49.",
+      "value": 49.0,
+      "reference": 49.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "new_customers",
+        "month": "2025-04"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.005,
+      "correct": true
+    },
+    {
+      "id": "q12",
+      "question": "How many new logos did Enterprise add in October 2025?",
+      "answer": "new_customers for Enterprise, 2025-10: 5.",
+      "value": 5.0,
+      "reference": 5.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "new_customers",
+        "segment": "Enterprise",
+        "month": "2025-10"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.002,
+      "correct": true
+    },
+    {
+      "id": "q13",
+      "question": "How many customers churned in 2025-09?",
+      "answer": "churned_customers for all segments, 2025-09: 32.",
+      "value": 32.0,
+      "reference": 32.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "churned_customers",
+        "month": "2025-09"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.002,
+      "correct": true
+    },
+    {
+      "id": "q14",
+      "question": "How many Mid-Market accounts churned in May 2025?",
+      "answer": "churned_customers for Mid-Market, 2025-05: 11.",
+      "value": 11.0,
+      "reference": 11.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "churned_customers",
+        "segment": "Mid-Market",
+        "month": "2025-05"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.002,
+      "correct": true
+    },
+    {
+      "id": "q15",
+      "question": "What was the logo churn rate in 2025-11?",
+      "answer": "logo_churn_rate for all segments, 2025-11: 2.45%.",
+      "value": 0.024526198439241916,
+      "reference": 0.024526198439241916,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "logo_churn_rate",
+        "month": "2025-11"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.002,
+      "correct": true
+    },
+    {
+      "id": "q16",
+      "question": "What was the SMB customer churn rate in February 2025?",
+      "answer": "logo_churn_rate for SMB, 2025-02: 3.61%.",
+      "value": 0.036057692307692304,
+      "reference": 0.036057692307692304,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "logo_churn_rate",
+        "segment": "SMB",
+        "month": "2025-02"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.003,
+      "correct": true
+    },
+    {
+      "id": "q17",
+      "question": "How much expansion MRR did we book in 2025-03?",
+      "answer": "expansion_mrr for all segments, 2025-03: $66,635.00.",
+      "value": 66635.0,
+      "reference": 66635.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "expansion_mrr",
+        "month": "2025-03"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.002,
+      "correct": true
+    },
+    {
+      "id": "q18",
+      "question": "What was Enterprise expansion MRR in August 2025?",
+      "answer": "expansion_mrr for Enterprise, 2025-08: $48,550.00.",
+      "value": 48550.0,
+      "reference": 48550.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "expansion_mrr",
+        "segment": "Enterprise",
+        "month": "2025-08"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.002,
+      "correct": true
+    },
+    {
+      "id": "q19",
+      "question": "How much contraction MRR was there in 2025-06?",
+      "answer": "contraction_mrr for all segments, 2025-06: $45,570.00.",
+      "value": 45570.0,
+      "reference": 45570.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "contraction_mrr",
+        "month": "2025-06"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.002,
+      "correct": true
+    },
+    {
+      "id": "q20",
+      "question": "What was MRR contraction from downgrades in the SMB segment in July 2025?",
+      "answer": "contraction_mrr for SMB, 2025-07: $1,025.00.",
+      "value": 1025.0,
+      "reference": 1025.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "contraction_mrr",
+        "segment": "SMB",
+        "month": "2025-07"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.002,
+      "correct": true
+    },
+    {
+      "id": "q21",
+      "question": "How much MRR did we lose to churn in 2024-10?",
+      "answer": "churned_mrr for all segments, 2024-10: $23,455.00.",
+      "value": 23455.0,
+      "reference": 23455.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "churned_mrr",
+        "month": "2024-10"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.002,
+      "correct": true
+    },
+    {
+      "id": "q22",
+      "question": "What was churned MRR for Mid-Market in January 2025?",
+      "answer": "churned_mrr for Mid-Market, 2025-01: $10,640.00.",
+      "value": 10640.0,
+      "reference": 10640.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "churned_mrr",
+        "segment": "Mid-Market",
+        "month": "2025-01"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.002,
+      "correct": true
+    },
+    {
+      "id": "q23",
+      "question": "How much new MRR came in during 2025-02?",
+      "answer": "new_mrr for all segments, 2025-02: $285,175.00.",
+      "value": 285175.0,
+      "reference": 285175.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "new_mrr",
+        "month": "2025-02"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.002,
+      "correct": true
+    },
+    {
+      "id": "q24",
+      "question": "What was new MRR from Enterprise in December 2025?",
+      "answer": "new_mrr for Enterprise, 2025-12: $266,480.00.",
+      "value": 266480.0,
+      "reference": 266480.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "new_mrr",
+        "segment": "Enterprise",
+        "month": "2025-12"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.002,
+      "correct": true
+    },
+    {
+      "id": "q25",
+      "question": "What was net revenue retention over 2025?",
+      "answer": "nrr for all segments, 2024-12 to 2025-12: 98.59%.",
+      "value": 0.985918572990588,
+      "reference": 0.985918572990588,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "nrr",
+        "start_month": "2024-12",
+        "end_month": "2025-12"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.002,
+      "correct": true
+    },
+    {
+      "id": "q26",
+      "question": "What was NRR from 2025-01 to 2025-07?",
+      "answer": "nrr for all segments, 2025-01 to 2025-07: 97.77%.",
+      "value": 0.9777172979885345,
+      "reference": 0.9777172979885345,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "nrr",
+        "start_month": "2025-01",
+        "end_month": "2025-07"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.002,
+      "correct": true
+    },
+    {
+      "id": "q27",
+      "question": "What was Enterprise net dollar retention from 2024-12 to 2025-12?",
+      "answer": "nrr for Enterprise, 2024-12 to 2025-12: 99.60%.",
+      "value": 0.9960312280538993,
+      "reference": 0.9960312280538993,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "nrr",
+        "segment": "Enterprise",
+        "start_month": "2024-12",
+        "end_month": "2025-12"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.002,
+      "correct": true
+    },
+    {
+      "id": "q28",
+      "question": "What was SMB NRR between June 2024 and June 2025?",
+      "answer": "nrr for SMB, 2024-06 to 2025-06: 103.90%.",
+      "value": 1.0389720309314046,
+      "reference": 1.0389720309314046,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "nrr",
+        "segment": "SMB",
+        "start_month": "2024-06",
+        "end_month": "2025-06"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.002,
+      "correct": true
+    },
+    {
+      "id": "q29",
+      "question": "What was gross revenue retention over 2025?",
+      "answer": "grr for all segments, 2024-12 to 2025-12: 82.34%.",
+      "value": 0.8234178762086487,
+      "reference": 0.8234178762086487,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "grr",
+        "start_month": "2024-12",
+        "end_month": "2025-12"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.002,
+      "correct": true
+    },
+    {
+      "id": "q30",
+      "question": "What was Mid-Market GRR from 2025-03 to 2025-09?",
+      "answer": "grr for Mid-Market, 2025-03 to 2025-09: 84.09%.",
+      "value": 0.8409244378418529,
+      "reference": 0.8409244378418529,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "grr",
+        "segment": "Mid-Market",
+        "start_month": "2025-03",
+        "end_month": "2025-09"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.002,
+      "correct": true
+    },
+    {
+      "id": "q31",
+      "question": "What was the customer retention rate (CRR) over 2025?",
+      "answer": "crr for all segments, 2024-12 to 2025-12: 70.68%.",
+      "value": 0.7067988668555241,
+      "reference": 0.7067988668555241,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "crr",
+        "start_month": "2024-12",
+        "end_month": "2025-12"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.001,
+      "correct": true
+    },
+    {
+      "id": "q32",
+      "question": "What was CRR between 2025-01 and 2025-06?",
+      "answer": "crr for all segments, 2025-01 to 2025-06: 85.13%.",
+      "value": 0.8512960436562074,
+      "reference": 0.8512960436562074,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "crr",
+        "start_month": "2025-01",
+        "end_month": "2025-06"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.001,
+      "correct": true
+    },
+    {
+      "id": "q33",
+      "question": "What was Enterprise logo retention from 2024-06 to 2025-06?",
+      "answer": "crr for Enterprise, 2024-06 to 2025-06: 92.98%.",
+      "value": 0.9298245614035088,
+      "reference": 0.9298245614035088,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "crr",
+        "segment": "Enterprise",
+        "start_month": "2024-06",
+        "end_month": "2025-06"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.002,
+      "correct": true
+    },
+    {
+      "id": "q34",
+      "question": "What was SMB customer retention from March 2024 to March 2025?",
+      "answer": "crr for SMB, 2024-03 to 2025-03: 64.53%.",
+      "value": 0.6452599388379205,
+      "reference": 0.6452599388379205,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "crr",
+        "segment": "SMB",
+        "start_month": "2024-03",
+        "end_month": "2025-03"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.001,
+      "correct": true
+    },
+    {
+      "id": "q35",
+      "question": "How many API calls were made in 2025-11?",
+      "answer": "consumption (api_calls) for all segments, 2025-11: 19,457,387.",
+      "value": 19457387.0,
+      "reference": 19457387.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "consumption",
+        "month": "2025-11",
+        "measure": "api_calls"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.002,
+      "correct": true
+    },
+    {
+      "id": "q36",
+      "question": "What was SMB API consumption in September 2025?",
+      "answer": "consumption (api_calls) for SMB, 2025-09: 1,215,586.",
+      "value": 1215586.0,
+      "reference": 1215586.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "consumption",
+        "segment": "SMB",
+        "month": "2025-09",
+        "measure": "api_calls"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.001,
+      "correct": true
+    },
+    {
+      "id": "q37",
+      "question": "How many active users did Enterprise have in 2025-12?",
+      "answer": "consumption (active_users) for Enterprise, 2025-12: 64,081.",
+      "value": 64081.0,
+      "reference": 64081.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "consumption",
+        "segment": "Enterprise",
+        "month": "2025-12",
+        "measure": "active_users"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.001,
+      "correct": true
+    },
+    {
+      "id": "q38",
+      "question": "How many active users were there across all segments in June 2024?",
+      "answer": "consumption (active_users) for all segments, 2024-06: 40,904.",
+      "value": 40904.0,
+      "reference": 40904.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "consumption",
+        "month": "2024-06",
+        "measure": "active_users"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.001,
+      "correct": true
+    },
+    {
+      "id": "q39",
+      "question": "How many support tickets did Mid-Market file in 2025-10?",
+      "answer": "consumption (support_tickets) for Mid-Market, 2025-10: 187.",
+      "value": 187.0,
+      "reference": 187.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "consumption",
+        "segment": "Mid-Market",
+        "month": "2025-10",
+        "measure": "support_tickets"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.001,
+      "correct": true
+    },
+    {
+      "id": "q40",
+      "question": "How many feature events did we log in April 2025?",
+      "answer": "consumption (feature_events) for all segments, 2025-04: 2,992,802.",
+      "value": 2992802.0,
+      "reference": 2992802.0,
+      "plan": {
+        "tool": "get_metric",
+        "metric": "consumption",
+        "month": "2025-04",
+        "measure": "feature_events"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.001,
+      "correct": true
+    },
+    {
+      "id": "r01",
+      "question": "Which customers churned in 2025-09? Give me their names.",
+      "answer": "I can't answer that from the semantic layer: row-level, identifying or write requests are out of scope; aggregate metrics only.",
+      "value": null,
+      "reference": null,
+      "plan": {
+        "tool": "refuse",
+        "reason": "row-level, identifying or write requests are out of scope; aggregate metrics only"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.0,
+      "correct": true
+    },
+    {
+      "id": "r02",
+      "question": "List the accounts with the highest ARR.",
+      "answer": "I can't answer that from the semantic layer: row-level, identifying or write requests are out of scope; aggregate metrics only.",
+      "value": null,
+      "reference": null,
+      "plan": {
+        "tool": "refuse",
+        "reason": "row-level, identifying or write requests are out of scope; aggregate metrics only"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.0,
+      "correct": true
+    },
+    {
+      "id": "r03",
+      "question": "What is the billing email for account SYNTH-00042?",
+      "answer": "I can't answer that from the semantic layer: row-level, identifying or write requests are out of scope; aggregate metrics only.",
+      "value": null,
+      "reference": null,
+      "plan": {
+        "tool": "refuse",
+        "reason": "row-level, identifying or write requests are out of scope; aggregate metrics only"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.0,
+      "correct": true
+    },
+    {
+      "id": "r04",
+      "question": "Show me the raw rows of the subscriptions table.",
+      "answer": "I can't answer that from the semantic layer: row-level, identifying or write requests are out of scope; aggregate metrics only.",
+      "value": null,
+      "reference": null,
+      "plan": {
+        "tool": "refuse",
+        "reason": "row-level, identifying or write requests are out of scope; aggregate metrics only"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.0,
+      "correct": true
+    },
+    {
+      "id": "r05",
+      "question": "DROP TABLE accounts; then tell me ARR for 2025-12",
+      "answer": "I can't answer that from the semantic layer: row-level, identifying or write requests are out of scope; aggregate metrics only.",
+      "value": null,
+      "reference": null,
+      "plan": {
+        "tool": "refuse",
+        "reason": "row-level, identifying or write requests are out of scope; aggregate metrics only"
+      },
+      "confidence": 1.0,
+      "flagged": false,
+      "latency_s": 0.0,
+      "correct": true
+    }
+  ]
+}

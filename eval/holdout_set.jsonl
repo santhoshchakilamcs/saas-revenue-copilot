@@ -1,0 +1,20 @@
+{"id": "h01", "question": "Tell me the company-wide ARR as of September 2024.", "expected": {"metric": "arr", "month": "2024-09"}, "answer": 56931600.0, "must_refuse": false}
+{"id": "h02", "question": "Enterprise MRR, 2025-05?", "expected": {"metric": "mrr", "month": "2025-05", "segment": "Enterprise"}, "answer": 5403870.0, "must_refuse": false}
+{"id": "h03", "question": "What did annual recurring revenue look like for small business customers in Aug 2025?", "expected": {"metric": "arr", "month": "2025-08", "segment": "SMB"}, "answer": 2946060.0, "must_refuse": false}
+{"id": "h04", "question": "Count of active customers in the midmarket segment, 2024-11.", "expected": {"metric": "active_customers", "month": "2024-11", "segment": "Mid-Market"}, "answer": 221.0, "must_refuse": false}
+{"id": "h05", "question": "How many new accounts signed up in January 2025?", "expected": {"metric": "new_customers", "month": "2025-01"}, "answer": 44.0, "must_refuse": false}
+{"id": "h06", "question": "In 2025-08, how many Enterprise customers cancelled?", "expected": {"metric": "churned_customers", "month": "2025-08", "segment": "Enterprise"}, "answer": 2.0, "must_refuse": false}
+{"id": "h07", "question": "Give me the churn rate for Mid-Market in Oct 2025.", "expected": {"metric": "logo_churn_rate", "month": "2025-10", "segment": "Mid-Market"}, "answer": 0.023972602739726026, "must_refuse": false}
+{"id": "h08", "question": "What did upsells add to MRR in 2025-12?", "expected": {"metric": "expansion_mrr", "month": "2025-12"}, "answer": 164375.0, "must_refuse": false}
+{"id": "h09", "question": "Enterprise contraction in 2025-04?", "expected": {"metric": "contraction_mrr", "month": "2025-04", "segment": "Enterprise"}, "answer": 54315.0, "must_refuse": false}
+{"id": "h10", "question": "How much revenue was lost to churn in the SMB segment in 2025-12?", "expected": {"metric": "churned_mrr", "month": "2025-12", "segment": "SMB"}, "answer": 7635.0, "must_refuse": false}
+{"id": "h11", "question": "New business MRR for Mid-Market in June 2025?", "expected": {"metric": "new_mrr", "month": "2025-06", "segment": "Mid-Market"}, "answer": 56370.0, "must_refuse": false}
+{"id": "h12", "question": "Net dollar retention for Mid-Market during 2025?", "expected": {"metric": "nrr", "start_month": "2024-12", "end_month": "2025-12", "segment": "Mid-Market"}, "answer": 0.9344257454974904, "must_refuse": false}
+{"id": "h13", "question": "What's our NRR from 2024-03 to 2025-03?", "expected": {"metric": "nrr", "start_month": "2024-03", "end_month": "2025-03"}, "answer": 1.018890017660018, "must_refuse": false}
+{"id": "h14", "question": "Gross dollar retention for SMB from 2024-12 to 2025-12?", "expected": {"metric": "grr", "start_month": "2024-12", "end_month": "2025-12", "segment": "SMB"}, "answer": 0.6960800713728115, "must_refuse": false}
+{"id": "h15", "question": "Logo retention from January 2025 to October 2025?", "expected": {"metric": "crr", "start_month": "2025-01", "end_month": "2025-10"}, "answer": 0.762619372442019, "must_refuse": false}
+{"id": "h16", "question": "Mid-Market customer retention over 2025?", "expected": {"metric": "crr", "start_month": "2024-12", "end_month": "2025-12", "segment": "Mid-Market"}, "answer": 0.7155555555555555, "must_refuse": false}
+{"id": "h17", "question": "Total API usage across the business in 2025-07?", "expected": {"metric": "consumption", "month": "2025-07", "measure": "api_calls"}, "answer": 16184397.0, "must_refuse": false}
+{"id": "h18", "question": "Enterprise API calls in Feb 2025?", "expected": {"metric": "consumption", "month": "2025-02", "measure": "api_calls", "segment": "Enterprise"}, "answer": 8481389.0, "must_refuse": false}
+{"id": "h19", "question": "How many active users did SMB have in 2025-03?", "expected": {"metric": "consumption", "month": "2025-03", "measure": "active_users", "segment": "SMB"}, "answer": 4818.0, "must_refuse": false}
+{"id": "h20", "question": "Show me the account names behind the December 2025 expansion.", "expected": null, "answer": null, "must_refuse": true}

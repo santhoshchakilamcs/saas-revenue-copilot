@@ -1,0 +1,96 @@
+{
+  "survival": {
+    "n_accounts": 1468,
+    "n_events": 543,
+    "n_train": 1086,
+    "n_test": 382,
+    "cox_concordance_train": 0.7265804556933292,
+    "cox_concordance_test": 0.7391558517479248,
+    "logrank_p": 1.8350975139004416e-10,
+    "km": {
+      "SMB": {
+        "n": 882,
+        "events": 378,
+        "survival_12m": 0.6099431184148376,
+        "median_months": 19.0
+      },
+      "Mid-Market": {
+        "n": 455,
+        "events": 146,
+        "survival_12m": 0.7295322628108412,
+        "median_months": null
+      },
+      "Enterprise": {
+        "n": 131,
+        "events": 19,
+        "survival_12m": 0.8780062081754313,
+        "median_months": null
+      }
+    },
+    "hazard_ratios": {
+      "early_utilization": 0.3303,
+      "early_tickets": 1.022,
+      "log_calls_per_user": 0.2094,
+      "log_seats": 0.9137,
+      "plan_idx": 0.9438,
+      "seg_mid_market": 0.8282,
+      "seg_enterprise": 0.3765
+    },
+    "artifacts": [
+      "artifacts/survival/km_by_segment.png",
+      "artifacts/survival/cox_summary.csv"
+    ]
+  },
+  "propensity_churn": {
+    "label": "churn_next",
+    "n_train": 11901,
+    "n_test": 4385,
+    "positive_rate_test": 0.029646522234891677,
+    "xgb_auc": 0.7327596492813884,
+    "xgb_pr_auc": 0.09839296576035296,
+    "logreg_auc": 0.7707909247039683,
+    "top_decile_lift": 3.380760469598738,
+    "top_features": {
+      "log_calls_per_user": 0.1711,
+      "seg_enterprise": 0.1185,
+      "seat_utilization": 0.1021,
+      "log_seats": 0.0883,
+      "util_mom_change": 0.0821
+    }
+  },
+  "propensity_expansion": {
+    "label": "expand_next",
+    "n_train": 11901,
+    "n_test": 4385,
+    "positive_rate_test": 0.0629418472063854,
+    "xgb_auc": 0.7686811558932142,
+    "xgb_pr_auc": 0.15638526470966235,
+    "logreg_auc": 0.7884407151498478,
+    "top_decile_lift": 2.895249414017365,
+    "top_features": {
+      "log_calls_per_user": 0.2458,
+      "seat_utilization": 0.1193,
+      "plan_idx": 0.0849,
+      "calls_mom_change": 0.0811,
+      "util_mom_change": 0.076
+    }
+  },
+  "experiment": {
+    "baseline_upgrade_rate": 0.020389012113973724,
+    "relative_mde": 0.2,
+    "alpha": 0.05,
+    "planned_power": 0.8,
+    "n_per_arm": 20656,
+    "observed_control_rate": 0.020381487219209914,
+    "observed_treatment_rate": 0.023673508907823392,
+    "observed_relative_lift": 0.16152019002375298,
+    "p_value": 0.022641942180956377,
+    "abs_diff_ci95": [
+      0.0004614995739327999,
+      0.006122543803294156
+    ],
+    "empirical_power": 0.8035,
+    "empirical_false_positive_rate": 0.0525,
+    "n_sims": 2000
+  }
+}

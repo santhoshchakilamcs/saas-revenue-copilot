@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+mlruns/
+mlflow.db
+data/*.duckdb
+data/*.parquet
+data/*.wal
+reviews.db
+.pytest_cache/
+*.egg-info/

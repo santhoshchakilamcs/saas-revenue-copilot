@@ -1,0 +1,8 @@
+covariate,coef,exp(coef),p
+early_utilization,-1.1076,0.3303,0.1212
+early_tickets,0.0218,1.022,0.7722
+log_calls_per_user,-1.5636,0.2094,0.0
+log_seats,-0.0902,0.9137,0.2223
+plan_idx,-0.0578,0.9438,0.4566
+seg_mid_market,-0.1885,0.8282,0.2834
+seg_enterprise,-0.9768,0.3765,0.0135
